@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BlogCloud.Model</name>
+    </assembly>
+    <members>
+        <member name="T:BlogCloud.Model.TokenModel">
+            <summary>
+            Token实体
+            </summary>
+        </member>
+        <member name="P:BlogCloud.Model.TokenModel.Uid">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:BlogCloud.Model.TokenModel.Role">
+            <summary>
+            角色
+            </summary>
+        </member>
+        <member name="P:BlogCloud.Model.User.ID">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:BlogCloud.Model.User.Nmae">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:BlogCloud.Model.User.Age">
+            <summary>
+            年龄
+            </summary>
+        </member>
+    </members>
+</doc>

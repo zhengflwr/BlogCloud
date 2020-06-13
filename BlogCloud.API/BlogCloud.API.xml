@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BlogCloud.API</name>
+    </assembly>
+    <members>
+        <member name="M:BlogCloud.API.Auth.JwtHelper.IssueJwt(BlogCloud.Model.TokenModel)">
+            <summary>
+            颁发JWT字符串
+            </summary>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlogCloud.API.Auth.JwtHelper.SerializeJwt(System.String)">
+            <summary>
+            解析
+            </summary>
+            <param name="jwtStr"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BlogCloud.API.Controllers.UserController">
+            <summary>
+            Get请求 holle
+            </summary>
+            <returns>Holle Word!</returns>
+        </member>
+        <member name="M:BlogCloud.API.Controllers.UserController.User(BlogCloud.Model.User)">
+            <summary>
+            获取User实体
+            </summary>
+            <param name="user">用户</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
