@@ -267,11 +267,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud.Common\\BlogCloud.Common.csproj",
+      "projectUniqueName": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\BlogCloud.Common\\BlogCloud.Common.csproj",
       "projectName": "BlogCloud.Common",
-      "projectPath": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud.Common\\BlogCloud.Common.csproj",
+      "projectPath": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\BlogCloud.Common\\BlogCloud.Common.csproj",
       "packagesPath": "C:\\Users\\ZhengFl\\.nuget\\packages\\",
-      "outputPath": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud.Common\\obj\\",
+      "outputPath": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\BlogCloud.Common\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

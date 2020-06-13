@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud.Model\\BlogCloud.Model.csproj": {}
+    "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\BlogCloud.Model\\BlogCloud.Model.csproj": {}
   },
   "projects": {
-    "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud.Model\\BlogCloud.Model.csproj": {
+    "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\BlogCloud.Model\\BlogCloud.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud.Model\\BlogCloud.Model.csproj",
+        "projectUniqueName": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\BlogCloud.Model\\BlogCloud.Model.csproj",
         "projectName": "BlogCloud.Model",
-        "projectPath": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud.Model\\BlogCloud.Model.csproj",
+        "projectPath": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\BlogCloud.Model\\BlogCloud.Model.csproj",
         "packagesPath": "C:\\Users\\ZhengFl\\.nuget\\packages\\",
-        "outputPath": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud.Model\\obj\\",
+        "outputPath": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\BlogCloud.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

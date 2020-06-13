@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using BlogCloud.API.Auth;
 using BlogCloud.Model;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -59,6 +60,55 @@ namespace BlogCloud.API.Controllers
                 success = suc,
                 token = jwtStr
             });
+        }
+
+        /// <summary>
+        /// 需要Admin权限
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [Authorize(Roles = "Admin")]
+        public IActionResult Admin()
+        {
+            return Ok("hello admin");
+        }
+
+
+        /// <summary>
+        /// 需要System权限
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [Authorize(Roles = "System")]
+        public IActionResult System()
+        {
+            return Ok("hello System");
+        }
+
+        /// <summary>
+        /// 需要System和Admin权限
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [Authorize(Roles = "SystemOrAdmin")]
+        public IActionResult SystemOrAdmin()
+        {
+            return Ok("hello SystemOrAdmin");
+        }
+
+        /// <summary>
+        /// 解析Token
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [Authorize]
+        public IActionResult ParseToken()
+        {
+            //需要截取Bearer 
+            var tokenHeader = HttpContext.Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+            var user = JwtHelper.SerializeJwt(tokenHeader);
+            return Ok(user);
+
         }
     }
 }

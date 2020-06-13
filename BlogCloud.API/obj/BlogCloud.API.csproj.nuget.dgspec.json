@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud.API\\BlogCloud.API.csproj": {}
+    "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\BlogCloud.API\\BlogCloud.API.csproj": {}
   },
   "projects": {
-    "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud.API\\BlogCloud.API.csproj": {
+    "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\BlogCloud.API\\BlogCloud.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud.API\\BlogCloud.API.csproj",
+        "projectUniqueName": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\BlogCloud.API\\BlogCloud.API.csproj",
         "projectName": "BlogCloud.API",
-        "projectPath": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud.API\\BlogCloud.API.csproj",
+        "projectPath": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\BlogCloud.API\\BlogCloud.API.csproj",
         "packagesPath": "C:\\Users\\ZhengFl\\.nuget\\packages\\",
-        "outputPath": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud.API\\obj\\",
+        "outputPath": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\BlogCloud.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,11 +31,17 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud.Common\\BlogCloud.Common.csproj": {
-                "projectPath": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud.Common\\BlogCloud.Common.csproj"
+              "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\BlogCloud.Common\\BlogCloud.Common.csproj": {
+                "projectPath": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\BlogCloud.Common\\BlogCloud.Common.csproj"
               },
-              "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud.Model\\BlogCloud.Model.csproj": {
-                "projectPath": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud.Model\\BlogCloud.Model.csproj"
+              "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\BlogCloud.Model\\BlogCloud.Model.csproj": {
+                "projectPath": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\BlogCloud.Model\\BlogCloud.Model.csproj"
+              },
+              "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\IRepository\\IRepository.csproj": {
+                "projectPath": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\IRepository\\IRepository.csproj"
+              },
+              "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\Repository\\Repository.csproj": {
+                "projectPath": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\Repository\\Repository.csproj"
               }
             }
           }
@@ -72,6 +78,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.4.1, )"
+            },
+            "Swashbuckle.AspNetCore.Filters": {
+              "target": "Package",
+              "version": "[5.1.1, )"
             }
           },
           "imports": [
@@ -96,14 +106,14 @@
         }
       }
     },
-    "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud.Common\\BlogCloud.Common.csproj": {
+    "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\BlogCloud.Common\\BlogCloud.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud.Common\\BlogCloud.Common.csproj",
+        "projectUniqueName": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\BlogCloud.Common\\BlogCloud.Common.csproj",
         "projectName": "BlogCloud.Common",
-        "projectPath": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud.Common\\BlogCloud.Common.csproj",
+        "projectPath": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\BlogCloud.Common\\BlogCloud.Common.csproj",
         "packagesPath": "C:\\Users\\ZhengFl\\.nuget\\packages\\",
-        "outputPath": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud.Common\\obj\\",
+        "outputPath": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\BlogCloud.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -166,14 +176,14 @@
         }
       }
     },
-    "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud.Model\\BlogCloud.Model.csproj": {
+    "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\BlogCloud.Model\\BlogCloud.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud.Model\\BlogCloud.Model.csproj",
+        "projectUniqueName": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\BlogCloud.Model\\BlogCloud.Model.csproj",
         "projectName": "BlogCloud.Model",
-        "projectPath": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud.Model\\BlogCloud.Model.csproj",
+        "projectPath": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\BlogCloud.Model\\BlogCloud.Model.csproj",
         "packagesPath": "C:\\Users\\ZhengFl\\.nuget\\packages\\",
-        "outputPath": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud.Model\\obj\\",
+        "outputPath": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\BlogCloud.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -193,6 +203,122 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\IRepository\\IRepository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\IRepository\\IRepository.csproj",
+        "projectName": "IRepository",
+        "projectPath": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\IRepository\\IRepository.csproj",
+        "packagesPath": "C:\\Users\\ZhengFl\\.nuget\\packages\\",
+        "outputPath": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\IRepository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ZhengFl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://128.1.10.2:8081/DataServices/Packages.svc/": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\Repository\\Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\Repository\\Repository.csproj",
+        "projectName": "Repository",
+        "projectPath": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\ZhengFl\\.nuget\\packages\\",
+        "outputPath": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ZhengFl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://128.1.10.2:8081/DataServices/Packages.svc/": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\IRepository\\IRepository.csproj": {
+                "projectPath": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\IRepository\\IRepository.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

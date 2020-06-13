@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "d3A7tQFn6qa9H8Hj5oNrymF6Vg1XDtWTUoheBmA3MyB8DOHNhzGas0Kv0/iptdYm7vn+pZTI5wpsG9vq0DhGSQ==",
+  "dgSpecHash": "NOQFNFxAYhDzkad3xMlUk9ykZc0YUOkF7Uzccq+KuAJFxTwqc2JYnvKBosAxpHr+oPFgdNXj/74jSxcNu0FctQ==",
   "success": true,
-  "projectFilePath": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud.Model\\BlogCloud.Model.csproj",
+  "projectFilePath": "D:\\EngineerFile\\博客\\BlogAPI\\BlogCloud\\BlogCloud.Model\\BlogCloud.Model.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

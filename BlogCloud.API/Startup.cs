@@ -28,6 +28,8 @@ namespace BlogCloud.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //jwt授权验证
+            //services.AddAuthorizationSetup();
             //注册appsettings读取类
             services.AddSingleton(new Appsettings(Configuration));
             //测试Common项目helper操作
@@ -61,6 +63,8 @@ namespace BlogCloud.API
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            //app.UseAuthentication();
 
             app.UseAuthorization();
 

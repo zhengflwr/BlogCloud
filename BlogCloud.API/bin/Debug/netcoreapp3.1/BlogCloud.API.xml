@@ -18,6 +18,14 @@
             <param name="jwtStr"></param>
             <returns></returns>
         </member>
+        <member name="M:BlogCloud.API.Controllers.TestController.Sum(System.Int32,System.Int32)">
+            <summary>
+            求和
+            </summary>
+            <param name="i"></param>
+            <param name="j"></param>
+            <returns></returns>
+        </member>
         <member name="T:BlogCloud.API.Controllers.UserController">
             <summary>
             Get请求 holle
@@ -29,6 +37,30 @@
             获取User实体
             </summary>
             <param name="user">用户</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlogCloud.API.Controllers.UserController.Admin">
+            <summary>
+            需要Admin权限
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlogCloud.API.Controllers.UserController.System">
+            <summary>
+            需要System权限
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlogCloud.API.Controllers.UserController.SystemOrAdmin">
+            <summary>
+            需要System和Admin权限
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlogCloud.API.Controllers.UserController.ParseToken">
+            <summary>
+            解析Token
+            </summary>
             <returns></returns>
         </member>
     </members>

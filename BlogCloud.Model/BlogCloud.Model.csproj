@@ -8,4 +8,8 @@
     <DocumentationFile>..\BlogCloud.Model\BlogCloud.Model.xml</DocumentationFile>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Entity\" />
+  </ItemGroup>
+
 </Project>
