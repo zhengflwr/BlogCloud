@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BlogCloud.API.Auth;
+using BlogCloud.IService;
 using BlogCloud.Model;
+using BlogCloud.Service;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -110,5 +112,19 @@ namespace BlogCloud.API.Controllers
             return Ok(user);
 
         }
+
+        /// <summary>
+        /// 根据id获取数据
+        /// </summary>
+        /// <param name="id">参数id</param>
+        /// <returns></returns>
+        [HttpGet("{id}", Name = "Get")]
+        public async Task<IActionResult> GetUser(int id)
+        {
+            IUserService userService = new UserService();
+            BlogCloud.Model.Entity.User user = await userService.QueryByID(id);
+            return Ok(user);
+        }
+
     }
 }

@@ -22,6 +22,7 @@
   <ItemGroup>
     <ProjectReference Include="..\BlogCloud.Common\BlogCloud.Common.csproj" />
     <ProjectReference Include="..\BlogCloud.Model\BlogCloud.Model.csproj" />
+    <ProjectReference Include="..\BlogCloud.Service\BlogCloud.Service.csproj" />
     <ProjectReference Include="..\IRepository\IRepository.csproj" />
     <ProjectReference Include="..\Repository\Repository.csproj" />
   </ItemGroup>

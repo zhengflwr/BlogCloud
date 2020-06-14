@@ -26,6 +26,34 @@
             <param name="j"></param>
             <returns></returns>
         </member>
+        <member name="M:BlogCloud.API.Controllers.TestUserController.GetUser(System.Int32)">
+            <summary>
+            根据id获取数据
+            </summary>
+            <param name="id">参数id</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlogCloud.API.Controllers.TestUserController.Add(BlogCloud.Model.Entity.User)">
+            <summary>
+            添加数据
+            </summary>
+            <param name="id">参数id</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlogCloud.API.Controllers.TestUserController.Update(BlogCloud.Model.Entity.User)">
+            <summary>
+            更新数据
+            </summary>
+            <param name="id">参数id</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlogCloud.API.Controllers.TestUserController.Delete(System.Object[])">
+            <summary>
+            删除数据
+            </summary>
+            <param name="id">参数id</param>
+            <returns></returns>
+        </member>
         <member name="T:BlogCloud.API.Controllers.UserController">
             <summary>
             Get请求 holle
@@ -61,6 +89,13 @@
             <summary>
             解析Token
             </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlogCloud.API.Controllers.UserController.GetUser(System.Int32)">
+            <summary>
+            根据id获取数据
+            </summary>
+            <param name="id">参数id</param>
             <returns></returns>
         </member>
     </members>

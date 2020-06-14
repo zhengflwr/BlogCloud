@@ -4,6 +4,32 @@
         <name>BlogCloud.Model</name>
     </assembly>
     <members>
+        <member name="T:BlogCloud.Model.Entity.User">
+            <summary>
+            用户表
+            </summary>
+        </member>
+        <member name="P:BlogCloud.Model.Entity.User.UserId">
+            <summary>
+            Desc:用户ID
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:BlogCloud.Model.Entity.User.UserName">
+            <summary>
+            Desc:用户名
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:BlogCloud.Model.Entity.User.Age">
+            <summary>
+            Desc:年龄
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
         <member name="T:BlogCloud.Model.TokenModel">
             <summary>
             Token实体

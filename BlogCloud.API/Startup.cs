@@ -13,6 +13,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using BlogCloud.Common.Helper;
+using Repository.Suger;
 
 namespace BlogCloud.API
 {
@@ -28,6 +29,9 @@ namespace BlogCloud.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //数据库配置
+            BaseDBConfig.ConnectionString = Configuration.GetSection("AppSettings:ConnectionString").Value;
+
             //jwt授权验证
             //services.AddAuthorizationSetup();
             //注册appsettings读取类

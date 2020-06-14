@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BlogCloud.Model\BlogCloud.Model.csproj" />
     <ProjectReference Include="..\IRepository\IRepository.csproj" />
   </ItemGroup>
 
